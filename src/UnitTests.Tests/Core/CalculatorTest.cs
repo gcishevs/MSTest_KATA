@@ -9,10 +9,8 @@ namespace UnitTests.Tests.Core
         [TestMethod]
         public void Test_Add_With_Empty_String()
         {
-            //arange
+            //arrange
             int expected = 0;
-
-
 
             //act
             Calculator calc = new Calculator();
@@ -26,16 +24,15 @@ namespace UnitTests.Tests.Core
         public void Test_Add_With_One_Parameter()
         {
             
-            //arange
+            //arrange
             int parameter = 10;
             var expected = parameter;
 
             //act
-             Calculator calc = new Calculator();
+            Calculator calc = new Calculator();
             int actual = calc.Add("10");
 
             //asert
-            
             Assert.AreEqual(expected, actual);
           
         }
